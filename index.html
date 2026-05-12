@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-Ops Trial</title>
+    <title>Futsal Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Dev-Ops Trial</h1>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark">F</span>
+                <div>
+                    <strong>Futsal Arena</strong>
+                    <p>Book your match in seconds</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#booking">Booking</a>
+                <a href="#courts">Courts</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="booking">
+                <div class="hero-copy">
+                    <span class="eyebrow">Futsal Court Booking</span>
+                    <h1>Secure the best court for your next match.</h1>
+                    <p>Find available indoor futsal courts, compare prices, and reserve your preferred slot instantly.</p>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>14+</strong>
+                            <p>Courts available</p>
+                        </div>
+                        <div>
+                            <strong>120+</strong>
+                            <p>Teams booked weekly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="panel-header">
+                        <h2>Quick Booking</h2>
+                        <p>Reserve your slot now</p>
+                    </div>
+                    <form class="booking-form">
+                        <label>
+                            Location
+                            <select>
+                                <option>Central Stadium</option>
+                                <option>East Side Arena</option>
+                                <option>Riverside Court</option>
+                            </select>
+                        </label>
+                        <label>
+                            Date
+                            <input type="date" value="2026-05-14">
+                        </label>
+                        <label>
+                            Start time
+                            <select>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                            </select>
+                        </label>
+                        <button type="button">Check Availability</button>
+                    </form>
+
+                    <div class="court-card">
+                        <div>
+                            <p>Premium court</p>
+                            <strong>Central Stadium</strong>
+                        </div>
+                        <span>From $45/hr</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="courts" id="courts">
+                <div class="section-heading">
+                    <span>Available Courts</span>
+                    <h2>Choose the best fit for your team</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="court-card-large">
+                        <div class="court-image court-1"></div>
+                        <div class="court-info">
+                            <h3>Central Stadium</h3>
+                            <p>Indoor synthetic turf, lights, locker rooms, and spectator seating.</p>
+                            <div class="court-meta">
+                                <span>4v4 / 5v5</span>
+                                <span>$45/hr</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="court-card-large">
+                        <div class="court-image court-2"></div>
+                        <div class="court-info">
+                            <h3>East Side Arena</h3>
+                            <p>Modern court with premium flooring and match lighting for evening bookings.</p>
+                            <div class="court-meta">
+                                <span>4v4 / 5v5</span>
+                                <span>$40/hr</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="court-card-large">
+                        <div class="court-image court-3"></div>
+                        <div class="court-info">
+                            <h3>Riverside Court</h3>
+                            <p>Open-air futsal court with a lively atmosphere near the riverwalk.</p>
+                            <div class="court-meta">
+                                <span>4v4 / 5v5</span>
+                                <span>$35/hr</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <div class="section-heading">
+                    <span>Why book here?</span>
+                    <h2>Everything your team needs</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Instant confirmation</h3>
+                        <p>Reserve slots right away and receive booking details immediately.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Flexible times</h3>
+                        <p>Morning, evening, and weekend bookings to fit every squad’s schedule.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Easy payment</h3>
+                        <p>Choose your payment method and complete checkout in one step.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div>
+                <strong>Futsal Arena</strong>
+                <p>Book your preferred court, invite your teammates, and play with confidence.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#booking">Book now</a>
+                <a href="#courts">View courts</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

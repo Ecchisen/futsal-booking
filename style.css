@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    font-family: Inter, system-ui, sans-serif;
+    color: #111827;
+    background: #f7f8fb;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #132b5e 0%, #182f5f 45%, #f7f8fb 45%);
+}
+
+.page-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 18px 0;
+    color: #fff;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #51a5ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.brand strong {
+    display: block;
+    font-size: 1.15rem;
+}
+
+.brand p {
+    margin: 4px 0 0;
+    color: #d0d7ff;
+    font-size: 0.95rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 36px;
+}
+
+.hero-copy {
+    color: #fff;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 999px;
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+}
+
+.hero-copy h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 3vw, 3.8rem);
+    line-height: 1.02;
+}
+
+.hero-copy p {
+    margin: 20px 0 28px;
+    max-width: 560px;
+    font-size: 1rem;
+    color: #dde4fa;
+    line-height: 1.7;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-stats div {
+    min-width: 160px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.hero-panel {
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 32px 80px rgba(15, 23, 42, 0.12);
+    padding: 30px;
+}
+
+.panel-header h2 {
+    margin: 0 0 8px;
+    font-size: 1.6rem;
+}
+
+.panel-header p {
+    margin: 0;
+    color: #475569;
+}
+
+.booking-form {
+    display: grid;
+    gap: 18px;
+    margin: 24px 0 0;
+}
+
+.booking-form label {
+    display: grid;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.booking-form select,
+.booking-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.booking-form button {
+    background: #183bff;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.booking-form button:hover {
+    background: #0f2add;
+}
+
+.hero-panel .court-card {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.hero-panel .court-card p,
+.hero-panel .court-card strong {
+    margin: 0;
+}
+
+.hero-panel .court-card span {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 20px;
+}
+
+.section-heading span {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #0f172a;
+}
+
+.courts,
+.features {
+    margin-top: 48px;
+    padding: 32px 0;
+    background: #fff;
+    border-radius: 32px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.court-card-large {
+    background: #f8fafc;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+
+.court-image {
+    min-height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.court-1 {
+    background-image: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+.court-2 {
+    background-image: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+}
+
+.court-3 {
+    background-image: linear-gradient(135deg, #c026d3 0%, #ec4899 100%);
+}
+
+.court-info {
+    padding: 24px;
+}
+
+.court-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+}
+
+.court-info p {
+    margin: 0 0 18px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+.court-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #eef2ff;
+    border-radius: 24px;
+    padding: 28px;
+    min-height: 180px;
+}
+
+.feature-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.75;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 0 12px;
+    color: #fff;
+}
+
+footer strong {
+    display: block;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+footer p {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(255,255,255,0.78);
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 960px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .page-shell {
+        padding: 18px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
